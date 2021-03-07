@@ -1,0 +1,23 @@
+<h2>The Pokemon Topic Antics</h2>
+Cursed posts from the beloved Scratch Discuss topic
+
+<p id="post">
+</p>
+<script>
+// index stuff
+//page index
+var pages = [
+"<h3>Welcome!</h3><br>Please select a post from this index.</hr><button onclick='view(1)'>please stop 😳</button>",
+"<img src='/img/1.png'>"
+];
+// function lol
+function view(post){
+var postFinished = pages[post];
+if (post>0){
+postFinished = postFinished + "<button onclick='view(0)'>Back.</button>"
+}
+document.getElementById('post').innerHTML = "<hr>" + postFinished;
+}
+
+view(0); // startup
+</script>
